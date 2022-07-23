@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Using ML5.js (Neural Network)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ML5.js library -->
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script defer src="assets/index.js"></script>
+    <link href="assets/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <p class="mt-4 text-center">Developed by Anne Livia</p>
+    <div class="mt-4 w-50 p-3 container">
+      <img
+        src="assets/icons/iceCream.png"
+        class="img-icon mx-auto d-block img-thumbnail p-2"
+        width="150"
+        height="150"
+      />
+      <h1 class="text-center mt-1 mb-3">Ice Cream Revenue</h1>
+      <form>
+        <div class="form-group">
+          <label for="temperatura"
+            >What is the temperature in celsius today?
+          </label>
+          <input
+            type="number"
+            class="form-control"
+            id="temperatura"
+            placeholder="Ex: 30"
+            required
+          />
+        </div>
+        <button class="btn btn-primary btn-train">Train</button>
+        <button class="btn btn-primary btn-predict">Predict</button>
+      </form>
+      <div class="mt-4">
+        <span class="loading"></span>
+        <p id="result">Before predict the revenue, train the model.</p>
+      </div>
+    </div>
+  </body>
+</html>

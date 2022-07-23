@@ -1,0 +1,40 @@
+
+.container {
+    padding: 15px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.img-icon {
+    border: none;
+}
+
+/* CSS code to add spinner animation. Reference https://cssloaders.github.io/ */
+.loader {
+    margin-top: 2px;
+    width: 30px;
+    height: 30px;
+    border: 4px solid #FFF;
+    border-bottom-color: #1100ff;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+  
+  
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
